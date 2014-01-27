@@ -10,4 +10,6 @@
 
 @interface WTDContainerViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UITextField *textField;
+
 @end

@@ -7,13 +7,17 @@
 //
 
 #import "WTDTableViewController.h"
+#import "WTDContainerViewController.h"
 
-static CGFloat const kViewControllerCellHeight = 1000;
+static CGFloat const kViewControllerCellHeight = 300;
+static NSString * const kPushContainerViewController = @"PushContainerViewController";
 
 @interface WTDTableViewController ()
 
 @property (nonatomic, assign, getter = isViewControllerCellHidden) BOOL viewControllerCellHidden;
 @property (nonatomic, weak) IBOutlet UITableViewCell *viewControllerCell;
+
+@property (nonatomic, strong) WTDContainerViewController *containerViewController;
 
 @end
 
@@ -86,6 +90,8 @@ static CGFloat const kViewControllerCellHeight = 1000;
 #pragma mark - Action
 - (IBAction)switchViewControllerCell:(id)sender
 {
+    fprintf(stderr, "\n\n\n");
+
     self.viewControllerCellHidden = !self.viewControllerCellHidden;
 
     [self.tableView reloadData];
