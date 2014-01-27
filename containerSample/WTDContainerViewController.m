@@ -48,6 +48,12 @@
 {
     [super viewWillAppear:animated];
 
+    if (!self.view.hidden) {
+        [self.textField becomeFirstResponder];
+    } else {
+        [self.textField resignFirstResponder];
+    }
+
     fprintf(stderr, "WTDContainerViewController viewWillAppear\n");
 }
 

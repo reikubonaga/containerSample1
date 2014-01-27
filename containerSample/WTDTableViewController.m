@@ -23,18 +23,11 @@ static NSString * const kPushContainerViewController = @"PushContainerViewContro
 
 @implementation WTDTableViewController
 
-- (void)dealloc
-{
-    [self.view removeObserver:self forKeyPath:NSStringFromSelector(@selector(frame))];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     fprintf(stderr, "WTDTableViewController viewDidLoad\n");
-
-    [self.view addObserver:self forKeyPath:NSStringFromSelector(@selector(frame)) options:NSKeyValueObservingOptionNew context:NULL];
 
     self.viewControllerCellHidden = YES;
 }
@@ -87,6 +80,7 @@ static NSString * const kPushContainerViewController = @"PushContainerViewContro
 
     if ([[segue identifier] isEqualToString:kPushContainerViewController]) {
         self.containerViewController = [segue destinationViewController];
+        self.containerViewController.view.hidden = YES;
     }
 
     fprintf(stderr, "WTDTableViewController prepareForSegue\n");
@@ -112,23 +106,18 @@ static NSString * const kPushContainerViewController = @"PushContainerViewContro
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    fprintf(stderr, "WTDTableViewController heightForRowAtIndexPath\n");
+
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
 
     if (cell == self.viewControllerCell && !self.isViewControllerCellHidden) {
+        self.containerViewController.view.hidden = NO;
         return kViewControllerCellHeight;
+    } else {
+        self.containerViewController.view.hidden = YES;
     }
 
     return 0;
-}
-
-#pragma mark - Key Value Observing
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    if ([keyPath isEqualToString:NSStringFromSelector(@selector(frame))]) {
-        fprintf(stderr, "call KVO\n");
-        [self.containerViewController.textField becomeFirstResponder];
-    }
 }
 
 @end
