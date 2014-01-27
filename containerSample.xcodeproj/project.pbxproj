@@ -14,13 +14,15 @@
 		B15035DF1896653200A08605 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B15035DE1896653200A08605 /* main.m */; };
 		B15035E31896653200A08605 /* WTDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15035E21896653200A08605 /* WTDAppDelegate.m */; };
 		B15035E61896653200A08605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15035E41896653200A08605 /* Main.storyboard */; };
-		B15035E91896653200A08605 /* WTDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15035E81896653200A08605 /* WTDViewController.m */; };
 		B15035EB1896653200A08605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15035EA1896653200A08605 /* Images.xcassets */; };
 		B15035F21896653200A08605 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15035F11896653200A08605 /* XCTest.framework */; };
 		B15035F31896653200A08605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15035D21896653200A08605 /* Foundation.framework */; };
 		B15035F41896653200A08605 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15035D61896653200A08605 /* UIKit.framework */; };
 		B15035FC1896653200A08605 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B15035FA1896653200A08605 /* InfoPlist.strings */; };
 		B15035FE1896653200A08605 /* containerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15035FD1896653200A08605 /* containerSampleTests.m */; };
+		B1503609189665FD00A08605 /* WTDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1503608189665FD00A08605 /* WTDTableViewController.m */; };
+		B150360C1896661900A08605 /* WTDContainerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B150360B1896661900A08605 /* WTDContainerTableViewController.m */; };
+		B150360F1896663300A08605 /* WTDContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B150360E1896663300A08605 /* WTDContainerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		B15035E11896653200A08605 /* WTDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTDAppDelegate.h; sourceTree = "<group>"; };
 		B15035E21896653200A08605 /* WTDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTDAppDelegate.m; sourceTree = "<group>"; };
 		B15035E51896653200A08605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B15035E71896653200A08605 /* WTDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTDViewController.h; sourceTree = "<group>"; };
-		B15035E81896653200A08605 /* WTDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTDViewController.m; sourceTree = "<group>"; };
 		B15035EA1896653200A08605 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B15035F01896653200A08605 /* containerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = containerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15035F11896653200A08605 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B15035F91896653200A08605 /* containerSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "containerSampleTests-Info.plist"; sourceTree = "<group>"; };
 		B15035FB1896653200A08605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B15035FD1896653200A08605 /* containerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = containerSampleTests.m; sourceTree = "<group>"; };
+		B1503607189665FD00A08605 /* WTDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDTableViewController.h; sourceTree = "<group>"; };
+		B1503608189665FD00A08605 /* WTDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDTableViewController.m; sourceTree = "<group>"; };
+		B150360A1896661900A08605 /* WTDContainerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDContainerTableViewController.h; sourceTree = "<group>"; };
+		B150360B1896661900A08605 /* WTDContainerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDContainerTableViewController.m; sourceTree = "<group>"; };
+		B150360D1896663300A08605 /* WTDContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDContainerViewController.h; sourceTree = "<group>"; };
+		B150360E1896663300A08605 /* WTDContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDContainerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +120,13 @@
 			children = (
 				B15035E11896653200A08605 /* WTDAppDelegate.h */,
 				B15035E21896653200A08605 /* WTDAppDelegate.m */,
+				B1503607189665FD00A08605 /* WTDTableViewController.h */,
+				B1503608189665FD00A08605 /* WTDTableViewController.m */,
+				B150360A1896661900A08605 /* WTDContainerTableViewController.h */,
+				B150360B1896661900A08605 /* WTDContainerTableViewController.m */,
+				B150360D1896663300A08605 /* WTDContainerViewController.h */,
+				B150360E1896663300A08605 /* WTDContainerViewController.m */,
 				B15035E41896653200A08605 /* Main.storyboard */,
-				B15035E71896653200A08605 /* WTDViewController.h */,
-				B15035E81896653200A08605 /* WTDViewController.m */,
 				B15035EA1896653200A08605 /* Images.xcassets */,
 				B15035D91896653200A08605 /* Supporting Files */,
 			);
@@ -250,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B150360F1896663300A08605 /* WTDContainerViewController.m in Sources */,
 				B15035E31896653200A08605 /* WTDAppDelegate.m in Sources */,
+				B1503609189665FD00A08605 /* WTDTableViewController.m in Sources */,
 				B15035DF1896653200A08605 /* main.m in Sources */,
-				B15035E91896653200A08605 /* WTDViewController.m in Sources */,
+				B150360C1896661900A08605 /* WTDContainerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
