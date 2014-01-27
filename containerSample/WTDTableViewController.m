@@ -8,7 +8,7 @@
 
 #import "WTDTableViewController.h"
 
-static CGFloat const kViewControllerCellHeight = 300;
+static CGFloat const kViewControllerCellHeight = 1000;
 
 @interface WTDTableViewController ()
 
@@ -23,7 +23,58 @@ static CGFloat const kViewControllerCellHeight = 300;
 {
     [super viewDidLoad];
 
+    fprintf(stderr, "WTDTableViewController viewDidLoad\n");
+
     self.viewControllerCellHidden = NO;
+}
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+
+    fprintf(stderr, "WTDTableViewController viewWillLayoutSubviews\n");
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+
+    fprintf(stderr, "WTDTableViewController viewDidLayoutSubviews\n");
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    fprintf(stderr, "WTDTableViewController viewWillAppear\n");
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    fprintf(stderr, "WTDTableViewController viewDidAppear\n");
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+
+    fprintf(stderr, "WTDTableViewController viewWillDisAppear\n");
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+
+    fprintf(stderr, "WTDTableViewController viewDidDisappear\n");
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [super prepareForSegue:segue sender:sender];
+
+    fprintf(stderr, "WTDTableViewController prepareForSegue\n");
 }
 
 - (void)didReceiveMemoryWarning
