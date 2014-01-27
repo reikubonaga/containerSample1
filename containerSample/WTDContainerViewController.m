@@ -48,12 +48,16 @@
 {
     [super viewWillAppear:animated];
 
+    [self.textField becomeFirstResponder];
+
     fprintf(stderr, "WTDContainerViewController viewWillAppear\n");
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+
+    [self.textField resignFirstResponder];
 
     fprintf(stderr, "WTDContainerViewController viewDidAppear\n");
 }

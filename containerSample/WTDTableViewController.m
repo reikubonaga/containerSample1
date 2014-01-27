@@ -29,7 +29,7 @@ static NSString * const kPushContainerViewController = @"PushContainerViewContro
 
     fprintf(stderr, "WTDTableViewController viewDidLoad\n");
 
-    self.viewControllerCellHidden = NO;
+    self.viewControllerCellHidden = YES;
 }
 
 - (void)viewWillLayoutSubviews
