@@ -21,7 +21,6 @@
 		B15035FC1896653200A08605 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B15035FA1896653200A08605 /* InfoPlist.strings */; };
 		B15035FE1896653200A08605 /* containerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15035FD1896653200A08605 /* containerSampleTests.m */; };
 		B1503609189665FD00A08605 /* WTDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1503608189665FD00A08605 /* WTDTableViewController.m */; };
-		B150360C1896661900A08605 /* WTDContainerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B150360B1896661900A08605 /* WTDContainerTableViewController.m */; };
 		B150360F1896663300A08605 /* WTDContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B150360E1896663300A08605 /* WTDContainerViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +54,6 @@
 		B15035FD1896653200A08605 /* containerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = containerSampleTests.m; sourceTree = "<group>"; };
 		B1503607189665FD00A08605 /* WTDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDTableViewController.h; sourceTree = "<group>"; };
 		B1503608189665FD00A08605 /* WTDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDTableViewController.m; sourceTree = "<group>"; };
-		B150360A1896661900A08605 /* WTDContainerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDContainerTableViewController.h; sourceTree = "<group>"; };
-		B150360B1896661900A08605 /* WTDContainerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDContainerTableViewController.m; sourceTree = "<group>"; };
 		B150360D1896663300A08605 /* WTDContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDContainerViewController.h; sourceTree = "<group>"; };
 		B150360E1896663300A08605 /* WTDContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDContainerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,8 +119,6 @@
 				B15035E21896653200A08605 /* WTDAppDelegate.m */,
 				B1503607189665FD00A08605 /* WTDTableViewController.h */,
 				B1503608189665FD00A08605 /* WTDTableViewController.m */,
-				B150360A1896661900A08605 /* WTDContainerTableViewController.h */,
-				B150360B1896661900A08605 /* WTDContainerTableViewController.m */,
 				B150360D1896663300A08605 /* WTDContainerViewController.h */,
 				B150360E1896663300A08605 /* WTDContainerViewController.m */,
 				B15035E41896653200A08605 /* Main.storyboard */,
@@ -264,7 +259,6 @@
 				B15035E31896653200A08605 /* WTDAppDelegate.m in Sources */,
 				B1503609189665FD00A08605 /* WTDTableViewController.m in Sources */,
 				B15035DF1896653200A08605 /* main.m in Sources */,
-				B150360C1896661900A08605 /* WTDContainerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
