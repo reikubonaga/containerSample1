@@ -22,7 +22,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xne-Ef-Z8l">
+                                                <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xne-Ef-Z8l">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -31,6 +31,12 @@
                                                     </connections>
                                                 </containerView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xne-Ef-Z8l" firstAttribute="top" secondItem="gX7-PO-3LE" secondAttribute="top" id="Hef-dq-uXa"/>
+                                                <constraint firstAttribute="bottom" secondItem="xne-Ef-Z8l" secondAttribute="bottom" id="kDW-xa-y7h"/>
+                                                <constraint firstItem="xne-Ef-Z8l" firstAttribute="leading" secondItem="gX7-PO-3LE" secondAttribute="leading" id="ttE-aS-pJl"/>
+                                                <constraint firstAttribute="trailing" secondItem="xne-Ef-Z8l" secondAttribute="trailing" id="wsN-h9-NPa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
